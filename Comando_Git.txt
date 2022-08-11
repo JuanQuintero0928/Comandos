@@ -1,0 +1,3 @@
+git config --list	---> ver las configuracion del repositorio, nombre,correo,url
+git remote -v		---> visualizar la referencia del repositorio remoto
+git remote rm origin	---> eliminar la referencia del repositorio remoto, en caso que se haya relacionado de manera erronea
