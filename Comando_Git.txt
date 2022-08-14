@@ -1,3 +1,67 @@
 git config --list	---> ver las configuracion del repositorio, nombre,correo,url
 git remote -v		---> visualizar la referencia del repositorio remoto
 git remote rm origin	---> eliminar la referencia del repositorio remoto, en caso que se haya relacionado de manera erronea
+
+Configuracion inicial
+
+git config -l
+git config --global user.name "juan jose"
+git config --global user.email jjquintero@example.com
+
+Comando utilizados Entorno local
+git init                -- iniciarlizar git, crear repositorio
+git status              -- ver estado
+git add añadir          -- añadir a stanging
+git commit -m "mensaje a mandar"    -- guardar cambios en el repositorio
+git commit --amend      -- sirve para poder guardar un cambio en el commit anterior, no crea uno nuevo, se debe hacer el add manual
+git branch                          -- ver las ramas locales
+git branch -r                       -- ver las ramas remotas
+git branch -a                       -- ver todas las ramas (locales,remotas)
+git checkout -g nombreramanueva     -- crear ramas
+git checkout nombreramanueva        -- pasar entre ramas
+git merge nombreramanueva           -- combinar ramas
+git log                 -- visualizar los cambios que se han hecho
+git diff                -- visualizar diferencias
+git grep palabraABuscar -- buscar palabras dentro de mi repositorio
+git log -S "cabecera"   -- buscar palabras dentro de los commits
+.gitignore              -- Omitir archivos, ejemplo *.jpg
+
+github comandos Entorno Remoto
+git remote add origin http.............    -> se crea el enlace entre mi repositorio local al remoto
+git push origin master ----------------    -> se envia el repositorio a la nube, github
+git pull origin master ----------------    -> se descarga del remoto las actualizaciones
+
+github versiones
+git log
+git log --all
+git log --all --graph
+git log --all --graph --decorate --oneline ------------>para ver los logs de forma mas ordenadas
+git log --oneline
+
+git tags
+git tag -a v0.1 -m "mensaje que se desea guardar" codigodellog
+git tag                                     ----------> consultar cuantos tags existen
+git push origin --tags                      ----------> subir tags al github
+git tag -d nombretag                        ----------> para eliminar un tag  
+git push origin :refs/tags/nombretag        ----------> eliminar definitivamente el tags
+
+git stash                               -----> poder guardar cambios en otra rama sin afectar la rama actualizaciones
+git cherry-pick "cod_commit"            -----> me trae por medio del codigo del commit una parte de la version anterior
+
+crear aliases
+alias nombredelavariable="todo el comando que se desea guardar"
+
+git branch                  ---> ver ramas creadas
+git branch -D nombrerama    ---> borrar ramas por completo
+git show-branch --all       ---> ver cuales ramas estan creadas y en github
+gitk                        ---> ver en una ventana las versiones y logs
+git reset --SOFT cod_commit ---> restablecer al commit anterior
+git reset --HARD cod_commit ---> restablecer al commit anterior
+
+
+llaves publicas y llaves privadas configuracion de llaves en GIT
+ssh-keygen -t rsa -b 4096 -C jjquintero0928@gmail.com
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+
+
