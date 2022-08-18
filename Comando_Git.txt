@@ -1,6 +1,7 @@
 git config --list	---> ver las configuracion del repositorio, nombre,correo,url
 git remote -v		---> visualizar la referencia del repositorio remoto
 git remote rm origin	---> eliminar la referencia del repositorio remoto, en caso que se haya relacionado de manera erronea
+git remote set-url origin git@..............   ---> para pasar del protocolo https a ssh
 
 Configuracion inicial
 
@@ -60,8 +61,12 @@ git reset --HARD cod_commit ---> restablecer al commit anterior
 
 
 llaves publicas y llaves privadas configuracion de llaves en GIT
-ssh-keygen -t rsa -b 4096 -C jjquintero0928@gmail.com
+ssh-keygen -t rsa -b 4096 -C "jjquintero0928@gmail.com"
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
+
+el rsa es la llave privada, el pub es la llave publica
+
+despues de realizar los comandos anteriores se procede a copiar la llave publica a nuestro GitHub y listo
 
 
