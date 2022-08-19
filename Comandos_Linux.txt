@@ -1,3 +1,13 @@
+manipulacion archivos y directorios
+cp nombrearchivo nombrearhivocopia --> se utiliza para copiar archivos
+cp -r carpeta carpetacopy  	--> se utiliza para copiar carpetas con archivos incluidos
+mv /carpeta/archivo destinofinal ..  --> copia una carpeta atras
+rm nombrearchivo      --> eliminar nombre archivo
+rm -rf nombredirectorio          --> se borra por completo
+sudo apt-get dist-upgrade        --> actualizar librerias del sistema
+sudo dpkg -i nombre_del_paquete.deb  --> para instalar un paquete debian
+
+
 adduser juan ---> crear usuarios
 id ---> permisos de usuarios
 sudo passwd usuario --> cambiar contraseña de usuario
