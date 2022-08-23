@@ -1,9 +1,35 @@
-manipulacion archivos y directorios
+manipulacion archivos y directorios:
+
 cp nombrearchivo nombrearhivocopia --> se utiliza para copiar archivos
 cp -r carpeta carpetacopy  	--> se utiliza para copiar carpetas con archivos incluidos
 mv /carpeta/archivo destinofinal ..  --> copia una carpeta atras
 rm nombrearchivo      --> eliminar nombre archivo
 rm -rf nombredirectorio          --> se borra por completo
+less nombrearchivo --- > parecido al vim, visualizar el archivo, con el / se puede generar busquedas
+ponemos /palabraAbuscar    ---> para buscar una palabra dentro del texto y se apreta Q para salir
+xdg-open nombrearhivo ---> para poder abrir un archivo con nuestro editor de texto predeterminado
+nautilus directorio   ---> para abrir la ventada del explorador
+
+Redirecciones linux:
+ls nombrecarpeta > archivo.txt  --> exporta los nombres de la carpeta a un archivo .txt, se sobreescribe si ya existe el archivo.txt, para que no se sobreescriba se utiliza >>
+ls comandoasa 2> error.txt      --> se guarda el error en un archivo.txt
+ls comandoasa > output.txt 2>&1 --> se guarda toda la informacion que se genero en el comando
+ls -lh | less  ---> para  listas lo de la carpeta y abrirlo con less, para realizar busquedas
+
+pipe operator:
+sudo apt install cowsay
+sudo apt install lolcat
+sudo apt install figlet
+figlet "frase" | lolcat --> para generar una frase colorida
+
+Encadenado, Operadores de Control:
+comando1 && comando2 && comando3  --> se tiene que ejecutar exitosamente uno a uno para realizarlos completo
+
+ 
+
+
+Comandos intalacion de paquetes :
+
 sudo apt-get dist-upgrade        --> actualizar librerias del sistema
 sudo dpkg -i nombre_del_paquete.deb  --> para instalar un paquete debian
 
