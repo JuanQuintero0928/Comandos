@@ -1,3 +1,5 @@
+man nombrecomando     --> para ver manual del comandho
+
 manipulacion archivos y directorios:
 
 cp nombrearchivo nombrearhivocopia --> se utiliza para copiar archivos
@@ -25,7 +27,21 @@ figlet "frase" | lolcat --> para generar una frase colorida
 Encadenado, Operadores de Control:
 comando1 && comando2 && comando3  --> se tiene que ejecutar exitosamente uno a uno para realizarlos completo
 
- 
+Gestion de Permisos:
+chmod 755 nombrearchivo o directorio   ---> para asignar los permisos a un archivo o carpeta
+chmod g+r nombrearchivo   	       ---> asignar read al grupo
+
+
+
+Gestion de paquetes:
+sudo apt autoremove ---> busca librerias que no se utilizan y las desintala
+sudo apt remove paquete  ---> para remover un paquete instalado previamente
+sudo systemctl status sshd   --> saber si el servicio se esta ejecutando
+sudo systemctl status        --> ver todos los servicios
+sudo systemctl stop ssh	     --> parar un servicio
+sudo systemctl start ssh     --> iniciar servicio
+sudo systemctl restart ssh   --> reiniciar un servicio
+
 
 
 Comandos intalacion de paquetes :
@@ -34,6 +50,9 @@ sudo apt-get dist-upgrade        --> actualizar librerias del sistema
 sudo dpkg -i nombre_del_paquete.deb  --> para instalar un paquete debian
 
 
+
+sudo useradd -m juanjo   ----> para crear usuarios
+cat /etc/passwd          ----> para ver los usuarios creadoas
 adduser juan ---> crear usuarios
 id ---> permisos de usuarios
 sudo passwd usuario --> cambiar contraseña de usuario
