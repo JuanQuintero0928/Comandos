@@ -45,9 +45,13 @@ sudo systemctl restart ssh   --> reiniciar un servicio
 
 
 Comandos intalacion de paquetes :
-
+sudo dpkg --get-selections > ficheros    --> exportar en un archivo el nombre de todos los programas instalados
+sudo apt install nombreprograma      ---> instalar paquetes
+sudo apt remove nombreprograma       ---> desintalar el paquete
+sudo apt autoremove   	 	     ---> remover librerias que ya no se requieran en nuestro sistema
 sudo apt-get dist-upgrade        --> actualizar librerias del sistema
-sudo dpkg -i nombre_del_paquete.deb  --> para instalar un paquete debian
+sudo dpkg -i nombre_del_paquete.deb  --> para instalar un paquete debian, que ya tengamos en nuestro pc
+
 
 
 
