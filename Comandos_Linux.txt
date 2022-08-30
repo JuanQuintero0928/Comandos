@@ -42,6 +42,11 @@ sudo systemctl stop ssh	     --> parar un servicio
 sudo systemctl start ssh     --> iniciar servicio
 sudo systemctl restart ssh   --> reiniciar un servicio
 
+Comandos SSH
+para cambiar el puerto listing de ssh
+cd /etc/ssh/
+existe un archivo sshd_config
+se modifica el puerto y se reinicia el servicio
 
 
 Comandos intalacion de paquetes :
@@ -67,5 +72,8 @@ sudo rm -rf carpeta-ruta --- > Eliminar carpetas
 ls -ll                  --> listar archivos en forma de lista
 
 
+instalar virtual box:
+En caso de generar un error al abrir virtual box, sobre el kernel, realizar los siguientes comandos
+https://stackoverflow.com/questions/61248315/sign-virtual-box-modules-vboxdrv-vboxnetflt-vboxnetadp-vboxpci-centos-8
 
 enlace simbolico, la carpeta apunta hacia otra ruta
