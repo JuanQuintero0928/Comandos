@@ -12,6 +12,12 @@ ponemos /palabraAbuscar    ---> para buscar una palabra dentro del texto y se ap
 xdg-open nombrearhivo ---> para poder abrir un archivo con nuestro editor de texto predeterminado
 nautilus directorio   ---> para abrir la ventada del explorador
 
+
+
+
+ss -la 	     ---> para ver los servicios y puertos usados
+ss - la | grep 5432  ---> para filtrar en especial un puerto
+
 Redirecciones linux:
 ls nombrecarpeta > archivo.txt  --> exporta los nombres de la carpeta a un archivo .txt, se sobreescribe si ya existe el archivo.txt, para que no se sobreescriba se utiliza >>
 ls comandoasa 2> error.txt      --> se guarda el error en un archivo.txt
@@ -30,6 +36,7 @@ comando1 && comando2 && comando3  --> se tiene que ejecutar exitosamente uno a u
 Gestion de Permisos:
 chmod 755 nombrearchivo o directorio   ---> para asignar los permisos a un archivo o carpeta
 chmod g+r nombrearchivo   	       ---> asignar read al grupo
+chmod u-w nombrearchivo			--> quitar permisos, u=user, g=group, o=other
 
 
 
@@ -63,6 +70,7 @@ sudo dpkg -i nombre_del_paquete.deb  --> para instalar un paquete debian, que ya
 sudo useradd -m juanjo   ----> para crear usuarios
 cat /etc/passwd          ----> para ver los usuarios creadoas
 adduser juan ---> crear usuarios
+whoami --> usuario actual
 id ---> permisos de usuarios
 sudo passwd usuario --> cambiar contraseña de usuario
 su - m usuario     --> cambiar entre usuario
@@ -70,6 +78,10 @@ exit               --> salir del usuario actual
 sudo userdel nombreusuario --> eliminar el usuario
 sudo rm -rf carpeta-ruta --- > Eliminar carpetas
 ls -ll                  --> listar archivos en forma de lista
+.bash   ---> en este archivo se encuentran la configuracion para crear alias, ruta -> /home/juanjo
+which code --> para saber donde se encuentra el binarios del programa a buscar
+find ./ -name *txt  --> busca todos los .txt
+find ./ -type df -name comandos   ----> d=directory, f=file
 
 
 instalar virtual box:
