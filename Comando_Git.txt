@@ -26,6 +26,7 @@ git diff                -- visualizar diferencias
 git grep palabraABuscar -- buscar palabras dentro de mi repositorio
 git log -S "cabecera"   -- buscar palabras dentro de los commits
 .gitignore              -- Omitir archivos, ejemplo *.jpg
+git rm -r --cached	    -- Si se hizo add lo revierte 
 
 github comandos Entorno Remoto
 git remote add origin http.............    -> se crea el enlace entre mi repositorio local al remoto
